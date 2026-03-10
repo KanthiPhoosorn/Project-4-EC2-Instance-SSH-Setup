@@ -1,2 +1,58 @@
-# Project-4-EC2-Instance-SSH-Setup
-Launched cloud server and connected via SSH. - Instance: t2.micro Amazon Linux 2023 - Connected via: Kali Linux WSL2 - IP: 3.27.106.7 - Date: March 10, 2026
+# ☁️ Project #4 — EC2 Instance + SSH Setup
+
+**Author:** Kanthi Phoosorn  
+**Date:** March 10, 2026  
+**Part of:** [Cloud-Security-Engineer Portfolio](https://github.com/KanthiPhoosorn/Cloud-Security-Engineer)
+
+## 📋 What I Did
+- Launched AWS EC2 t2.micro instance (Amazon Linux 2023)
+- Created RSA key pair for secure SSH access
+- Connected via SSH using Kali Linux WSL2
+- Updated server packages with yum
+- Installed Python3-pip and Boto3
+
+## 🛠️ Technologies Used
+- AWS EC2 (t2.micro — Free Tier)
+- Amazon Linux 2023
+- SSH (RSA key authentication)
+- Kali Linux WSL2
+- Python3 + Boto3
+
+## 🔐 SSH Connection Command
+```bash
+ssh -i ~/kanthi-key.pem ec2-user@3.27.106.7
+```
+
+## 📸 Screenshot
+![EC2 SSH Connection](ec2-ssh.png)
+
+## 💡 What I Learned
+- Cloud server provisioning on AWS
+- SSH key-based authentication
+- EC2 free tier management
+- Linux server basics on cloud
+
+## 🔗 Related Projects
+- [Project #3 — Static Website](https://github.com/KanthiPhoosorn/Project-3-Static-Website-on-AWS-S3)
+- [Project #5 — Auto Backup to S3](https://github.com/KanthiPhoosorn/Project-5-AWS-Auto-Backup-S3)
+```
+
+---
+
+### 2 — Screenshot Needed
+```
+Take screenshot of your terminal showing:
+[ec2-user@ip-172-31-22-185 ~]$
+
+Windows + Shift + S → select terminal
+Save as: ec2-ssh.png
+Upload to repo
+```
+
+---
+
+### 3 — Folder Structure
+```
+Project-4-AWS-EC2-SSH-Setup/
+├── README.md
+└── ec2-ssh.png
